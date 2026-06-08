@@ -5,21 +5,21 @@
 class Bikebook < Formula
   desc "Agent-first CLI for the BikeBook Workshop API"
   homepage "https://github.com/helopony/bikebook-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.1/bikebook_v0.1.1_darwin_amd64.tar.gz"
-      sha256 "7b8de5928e03307ff6e61bf0e34b15c879811552f15aa42f9faafac6b2626910"
+      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.2/bikebook_v0.1.2_darwin_amd64.tar.gz"
+      sha256 "fb0b70f00fa52d98f6702dfe1bbf8bb571cc243e0eb3445b2ced36966c5f6b3f"
 
       define_method(:install) do
         bin.install "bikebook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.1/bikebook_v0.1.1_darwin_arm64.tar.gz"
-      sha256 "3c0744e704db9c4b35e576205cf3286994c576325546daa3b6991be33c182918"
+      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.2/bikebook_v0.1.2_darwin_arm64.tar.gz"
+      sha256 "745e6e1782aa61664d804f8e66f09c6d1f5619488f4743acb3af551dfc80637b"
 
       define_method(:install) do
         bin.install "bikebook"
@@ -29,15 +29,15 @@ class Bikebook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.1/bikebook_v0.1.1_linux_amd64.tar.gz"
-      sha256 "448a0ba2e7c67aaf514f163e2e959474fc2698d3950b283b5c2242970f164490"
+      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.2/bikebook_v0.1.2_linux_amd64.tar.gz"
+      sha256 "5ca74583bc67a92d6dcc3ac1feb67f82444c44f31376157b662998e4f77be9cd"
       define_method(:install) do
         bin.install "bikebook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.1/bikebook_v0.1.1_linux_arm64.tar.gz"
-      sha256 "3a10d3a39c567feaf15a84c694e80fc94fc433139151235ee4f076efc436495f"
+      url "https://github.com/helopony/bikebook-cli/releases/download/v0.1.2/bikebook_v0.1.2_linux_arm64.tar.gz"
+      sha256 "7113288695f8a4c2096676fe5d9d3f69a30b18f22cd5531a282d43cf58754312"
       define_method(:install) do
         bin.install "bikebook"
       end
